@@ -4,7 +4,7 @@
 
 This website is a portfolio of all of my past and current projects.
 Here is a link to the site:
-[Portfolia](https://dy-lan8.github.io/horiseon-optimization/)
+[Portfolio](https://dy-lan8.github.io/dylans-portfolio/)
 
 
 ## Usage

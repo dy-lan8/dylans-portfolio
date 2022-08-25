@@ -124,14 +124,14 @@ footer{
     background-color: var(--text);
     color: var(--bg);
     display: inline-block;
-    padding-inline: 95px;
+    padding-inline: 5px;
     text-decoration: none;
 }
 
   
 
 @media screen and (max-width: 900px) {
-    body, main, .work { flex-direction: column;
+    body, main, .work, footer { flex-direction: column;
         justify-content: center;
     }
     aside {
