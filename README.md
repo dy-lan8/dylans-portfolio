@@ -1,0 +1,17 @@
+# <Dylans Portfolio>
+
+## Description
+
+This website is a portfolio of all of my past and current projects.
+Here is a link to the site:
+[Portfolia](https://dy-lan8.github.io/horiseon-optimization/)
+
+
+## Usage
+The links in the sidenave will allow you to go to different sections of the page.
+Click on the images to view the associated project.
+Contact information is at the bottom
+[alt text](./assets/images/site.png)
+
+## Contact
+if you have any questions, please email me at none@noone.com
