@@ -2,55 +2,63 @@
 <html lang="en"></html>
 <head>
     <meta charset="UTF=8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>dylan's portfolio!</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <header>
-        <h1>dylan's portfolio</h1>
-        <nav>
-            <ul class = "header-float">
-                <li><a href="#">about me</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">contact</a></li>
+    <aside class="sidenav">
+        
+        <sidenav>
+            <ul >
+                <li><a href="#about">about me</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-       <h2>about me</h2>
-       <article class="about">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem beatae dolorum, exercitationem, fugiat quis nam et omnis accusamus totam eos voluptatem a architecto commodi dignissimos ipsam ut doloremque adipisci.
-        </p>
-       </article>
-       <h3>work</h3>
-       <figure class="fig1">
-            <figcaption id="happy">HAPPY ENDING</figcaption>
-            <img id="happy" src="./assets/images/Screenshot_20200904-204137.png" alt="happy endings movie poster">
-        </figure>
-        <figure class="fig2">
-            <figcaption id="vacation">VACATION EP</figcaption>
-            <img id="vacation" src="./assets/images/vacation.jpg" alt="vacation EP cover">
-        </figure>
-        <figure class="fig3">
-            <figcaption id="lover">LOVER EP</figcaption>
-            <img id="lover" src="./assets/images/lover.jpg" alt="lover album cover">
-        </figure>
-       
-       <h4>contact</h4>
-            <ul class = contact>
-                <li></li>
-                <li></li>
-                <li></li>
-    </ul>
-
-    </main>
-
-</body>
-<footer>
+        </sidenav>
     
-
-</footer>
+    </aside>
+    <main class="content">
+    <h1>dylan's portfolio</h1>
+    <section>
+        <img id="me" src="./assets/images/me.jpg" alt="picture of me">
+        <h2>about me</h2>
+       <section id="about" class="about">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem beatae dolorum, exercitationem, fugiat quis nam et omnis accusamus totam eos voluptatem a architecto commodi dignissimos ipsam ut doloremque adipisci.
+        </p>
+    </section>
+        <h3>work</h3>
+        <section id="work" class="work">
+        <figure >
+            <a href="https://vimeo.com/467867755" target="_blank">
+            <img id="happy" class="happy" src="./assets/images/Screenshot_20200904-204137.png" alt="happy endings movie poster"></a>
+            <figcaption>HAPPY ENDING</figcaption>
+        </figure>
+        <figure>
+            <a href="https://distrokid.com/hyperfollow/dylan13/vacation" target="_blank">
+            <img id="vacation" src="./assets/images/vacation.jpg" alt="vacation EP cover"></a>
+            <figcaption>VACATION EP</figcaption>
+        </figure>
+        <figure>
+            <a href="https://distrokid.com/hyperfollow/dylan13/lover-2" target="_blank">
+            <img id="lover" src="./assets/images/lover.jpg" alt="lover album cover"></a>
+            <figcaption>LOVER EP</figcaption>
+        </figure>
+        </section>    
+        <h4>contact</h4>
+        <footer id="contact"  >
+            <ul>
+               <li class="number">360.555.0222</li>
+               <li class="email">walkerdy1@gmail.com</li>
+               <li class="ig">instagram</li>
+            </ul>
+        </footer>
+        </section>
+       </main>
+       
+      
+</body>
+</html>

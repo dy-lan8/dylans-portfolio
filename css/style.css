@@ -2,78 +2,140 @@
     --bg: rgb(125, 155, 211);
     --text: blanchedalmond;
 }
-
-*{
+* {
+    box-sizing: border-box;
     background-color: var(--bg);
     color: var(--text);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
 }
-h1 {
-    text-align: left;
-   }
-header {
-    
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .sidenav {
+    height: 100%;
+    width: 200px;
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    z-index: 1;
     top: 0;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 40px;
-    background-color: var(--text);
-}
-
-.header-float {
-    display: flex;
-    flex-direction:row;
-    justify-content: end;
-    text-decoration: none;
+    left: 0;
+    background-color:var(--bg);
+    overflow-x: hidden;
+  }
+  .sidenav a {
+    color: #f2f2f2;
+    text-align: center;
     padding: 14px 16px;
-}
-.header-float a {
-    float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block
+  }
 
-.header-float a:hover {
+  .sidenav a:hover {
     background: var(--text);
     color: var(--bg);
     
 }
-.about {
 
-}
-.fig1 {
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-  flex: 0 0 300px;
-  margin: 20px;
+.content {
+    margin-left: 200px;
+    padding-left: 40px;
   }
-#happy {
-    position: relative;
-    max-width: 500px;
-  height: auto;
-  left: 450px;
-  top: 200px;
+
+h1 {
+       font-size: 48px;
+    border-bottom: 5px solid white;
+
+}
+section {
+    width: 100%;
+    margin: 20px auto;
+    border-bottom: 5px solid white;
+}
+#me {
+    width: 100%;
+    height: 40%;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 70px;
+    border: 42px solid blanchedalmond
+   
 }
 
-#lover {
-    position: relative;
-    max-width: 25%;
-  height: 25%;
-  left: 700px;
-  bottom: 200px;
+.about {
+    font-size: 25px;
+    margin-bottom: 70px;
+   
+}
+p {
+    margin-bottom: 130px;
+    margin-top: 60px;
+    text-align: center;
+}
+h2, h3, h4 {
+    text-align: center;
+    font-size: 40px;
+}
+.work {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-#vacation {
-    position: relative;
-    max-width: 25%;
-  height: auto;
-  left: 300px;
-  top: 190px;
+figure {
+    margin: 20px;
 }
+figure img {
+    vertical-align: baseline;
+    max-width: 300px;
+    height: auto;
+    border: 1px dotted gray;
+   }
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+    justify-content: space-evenly;
+}
+figure img:hover {
+ border: 10px solid white; 
+ transform: rotate(4deg);  
+}
+figure .happy {
+    max-width: 400px;
+    height: auto;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin: auto
+}
+.number, .email, .ig {
+    background-color: var(--text);
+    color: var(--bg);
+    display: inline-block;
+    padding-inline: 95px;
+    text-decoration: none;
+}
+
+  
+
+@media screen and (max-width: 900px) {
+    body, main, .work { flex-direction: column;
+        justify-content: center;
+    }
+    aside {
+        order: 1;
+        position: fixed;
+    }
+}
+    
